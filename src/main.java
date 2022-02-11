@@ -1,7 +1,4 @@
-import ejercicios.AreaCirculo;
-import ejercicios.MayorMenor;
-import ejercicios.ParImpar;
-import ejercicios.PrecioIVA;
+import ejercicios.*;
 
 public class main {
     public static void main(String[] args) {
@@ -40,6 +37,12 @@ public class main {
          */
         ParImpar ejercicio6 = new ParImpar();
 //        ejercicio6.mostrarFor();
+
+        /**
+         * Este ejercicio contemple el punto 7 del taller
+         */
+        MayorIgualCero ejercicio7 = new MayorIgualCero();
+        ejercicio7.comprobar();
 
     }
 }
