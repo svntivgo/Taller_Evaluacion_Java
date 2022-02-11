@@ -18,7 +18,7 @@ public class main {
          * Este ejercicio contempla el punto 3 del taller
          */
         AreaCirculo ejercicio3 = new AreaCirculo();
-        ejercicio3.calcular();
+//        ejercicio3.calcular();
 
         /**
          * Este ejercicio contemple el punto 4 del taller
