@@ -56,5 +56,11 @@ public class main {
         Frase ejercicio9 = new Frase();
 //        ejercicio9.modificar();
 
+        /**
+         * Este ejercicio contemple el punto 10 del taller
+         */
+        Frase ejercicio10 = new Frase();
+//        ejercicio10.elimnarEspacios();
+
     }
 }
