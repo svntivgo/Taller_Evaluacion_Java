@@ -1,7 +1,6 @@
 package ejercicios;
 
 import javax.swing.*;
-import java.util.Scanner;
 
 public class MayorIgualCero {
     public void comprobar () {
