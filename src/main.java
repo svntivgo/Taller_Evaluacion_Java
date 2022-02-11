@@ -1,5 +1,6 @@
 import ejercicios.AreaCirculo;
 import ejercicios.MayorMenor;
+import ejercicios.ParImpar;
 import ejercicios.PrecioIVA;
 
 public class main {
@@ -21,5 +22,9 @@ public class main {
          */
 //        PrecioIVA ejercicio3 = new PrecioIVA();
 //        ejercicio3.calcular();
+
+        ParImpar ejercicio4 = new ParImpar();
+//        ejercicio4.mostrarWhile();
+//        ejercicio4.mostrarFor();
     }
 }
