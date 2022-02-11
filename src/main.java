@@ -1,5 +1,6 @@
 import ejercicios.AreaCirculo;
 import ejercicios.MayorMenor;
+import ejercicios.PrecioIVA;
 
 public class main {
     public static void main(String[] args) {
@@ -14,5 +15,11 @@ public class main {
          */
 //        AreaCirculo ejercicio2 = new AreaCirculo();
 //        ejercicio2.calcular();
+
+        /**
+         * Este ejercicio contemple el punto 4 del taller
+         */
+//        PrecioIVA ejercicio3 = new PrecioIVA();
+//        ejercicio3.calcular();
     }
 }
