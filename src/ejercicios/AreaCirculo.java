@@ -14,6 +14,6 @@ public class AreaCirculo {
         double radio = Double.parseDouble(numero.nextLine());
 
         double areaCirculo = Math.PI * Math.pow(radio, 2);
-        System.out.println("El radio del círculo es: "+ areaCirculo +" metros cuadrados");
+        System.out.println("El radio del círculo es: "+ String.format("%.2f", areaCirculo) +" metros cuadrados");
     }
 }
