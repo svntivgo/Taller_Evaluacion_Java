@@ -50,5 +50,11 @@ public class main {
         DiaLaboral ejercicio8 = new DiaLaboral();
 //        ejercicio8.comprobar();
 
+        /**
+         * Este ejercicio contemple el punto 9 del taller
+         */
+        Frase ejercicio9 = new Frase();
+//        ejercicio9.modificar();
+
     }
 }
