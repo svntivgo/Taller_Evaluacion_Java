@@ -44,5 +44,11 @@ public class main {
         MayorIgualCero ejercicio7 = new MayorIgualCero();
 //        ejercicio7.comprobar();
 
+        /**
+         * Este ejercicio contemple el punto 8 del taller
+         */
+        DiaLaboral ejercicio8 = new DiaLaboral();
+//        ejercicio8.comprobar();
+
     }
 }
