@@ -14,6 +14,9 @@ public class MayorIgualCero {
             numero = Integer.parseInt(datoIngresado);
         } while (numero < 0);
 
-        System.out.println(numero +" es igual o mayor a cero");
+        JOptionPane.showMessageDialog(
+                null,
+                numero +" es igual o mayor a cero"
+        );
     }
 }
