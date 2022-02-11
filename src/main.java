@@ -42,7 +42,7 @@ public class main {
          * Este ejercicio contemple el punto 7 del taller
          */
         MayorIgualCero ejercicio7 = new MayorIgualCero();
-        ejercicio7.comprobar();
+//        ejercicio7.comprobar();
 
     }
 }
