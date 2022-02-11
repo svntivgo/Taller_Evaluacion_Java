@@ -6,25 +6,40 @@ import ejercicios.PrecioIVA;
 public class main {
     public static void main(String[] args) {
         /**
-         * Este ejercicio contempla los puntos 1 y 2 del taller
+         * Este ejercicio contempla el punto 1 del taller
          */
-//        MayorMenor ejercicio1 = new MayorMenor();
+        MayorMenor ejercicio1 = new MayorMenor();
 //        ejercicio1.comparar();
+
+        /**
+         * Este ejercicio contempla el punto 2 del taller
+         */
+        MayorMenor ejercicio2 = new MayorMenor();
+//        ejercicio2.compararInput();
 
         /**
          * Este ejercicio contempla el punto 3 del taller
          */
-//        AreaCirculo ejercicio2 = new AreaCirculo();
-//        ejercicio2.calcular();
+        AreaCirculo ejercicio3 = new AreaCirculo();
+//        ejercicio3.calcular();
 
         /**
          * Este ejercicio contemple el punto 4 del taller
          */
-//        PrecioIVA ejercicio3 = new PrecioIVA();
-//        ejercicio3.calcular();
+        PrecioIVA ejercicio4 = new PrecioIVA();
+//        ejercicio4.calcular();
 
-        ParImpar ejercicio4 = new ParImpar();
-//        ejercicio4.mostrarWhile();
-//        ejercicio4.mostrarFor();
+        /**
+         * Este ejercicio contemple el punto 5 del taller
+         */
+        ParImpar ejercicio5 = new ParImpar();
+//        ejercicio5.mostrarWhile();
+
+        /**
+         * Este ejercicio contemple el punto 6 del taller
+         */
+        ParImpar ejercicio6 = new ParImpar();
+//        ejercicio6.mostrarFor();
+
     }
 }
