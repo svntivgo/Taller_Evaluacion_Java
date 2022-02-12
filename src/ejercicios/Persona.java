@@ -65,5 +65,16 @@ public class Persona {
         return sexoMayuscula;
     }
 
+    public String toString () {
+        String informacion =
+                "Nombre: "+ this.nombre + "\n" +
+                "Edad: "+ this.edad + "\n" +
+                "DNI: "+ this.dni + "\n" +
+                "Sexo: "+ this.sexo + "\n" +
+                "Peso: "+ this.peso + "\n" +
+                "Altura: "+ this.altura;
+        return informacion;
+    }
+
 
 }
