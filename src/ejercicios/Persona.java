@@ -21,12 +21,31 @@ public class Persona {
         this.sexo = sexo;
     }
 
-    public void constructorCompleto (String nombre, Integer edad, String dni, String sexo, Integer peso, Integer altura) {
+    public void constructorCompleto (String nombre, Integer edad, String sexo, Integer peso, Integer altura) {
         this.nombre = nombre;
         this.edad = edad;
-        this.dni = dni;
         this.sexo = sexo;
         this.peso = peso;
+        this.altura = altura;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setEdad(Integer edad) {
+        this.edad = edad;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public void setPeso(Integer peso) {
+        this.peso = peso;
+    }
+
+    public void setAltura(Integer altura) {
         this.altura = altura;
     }
 
@@ -74,13 +93,14 @@ public class Persona {
         return informacion;
     }
 
-    private Integer generaDNI () {
+    private String generaDNI () {
         Integer max = 99999999;
         Integer min = 10000000;
         Double numeroAleatorio = Math.random()*max + min;
         Integer numeroAleatorioEntero = numeroAleatorio.intValue();
+        String numeroToString = numeroAleatorioEntero.toString();
 
-        return numeroAleatorioEntero;
+        return numeroToString;
 
     }
 
