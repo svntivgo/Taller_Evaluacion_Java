@@ -86,5 +86,11 @@ public class main {
         Contador ejercicio14 = new Contador();
 //        ejercicio14.contar();
 
+        /**
+         * Este ejercicio contemple el punto 15 del taller
+         */
+        MenuCinema ejercicio15 = new MenuCinema();
+//        ejercicio15.mostrar();
+
     }
 }
