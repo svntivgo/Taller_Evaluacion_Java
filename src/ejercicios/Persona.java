@@ -9,8 +9,8 @@ public class Persona {
     public Persona () {
         this.nombre = "";
         this.edad = 0;
-        this.dni = null;
-        this.sexo = "";
+        this.dni = generaDNI();
+        this.sexo = hombre;
         this.peso = 0;
         this.altura = 0;
     }
@@ -18,13 +18,13 @@ public class Persona {
     public void constructorBasico (String nombre, Integer edad, String sexo) {
         this.nombre = nombre;
         this.edad = edad;
-        this.sexo = sexo;
+        this.sexo = comprobarSexo(sexo);
     }
 
     public void constructorCompleto (String nombre, Integer edad, String sexo, Integer peso, Integer altura) {
         this.nombre = nombre;
         this.edad = edad;
-        this.sexo = sexo;
+        this.sexo = comprobarSexo(sexo);
         this.peso = peso;
         this.altura = altura;
     }
@@ -37,8 +37,8 @@ public class Persona {
         this.edad = edad;
     }
 
-    public void setDni(String dni) {
-        this.dni = dni;
+    public void setSexo(String sexo) {
+        this.sexo = comprobarSexo(sexo);
     }
 
     public void setPeso(Integer peso) {
@@ -73,8 +73,8 @@ public class Persona {
         return resultado;
     }
 
-    private String comprobarSexo (String sexo) {
-        String sexoMayuscula = sexo.toUpperCase();
+    private String comprobarSexo (String userInput) {
+        String sexoMayuscula = userInput.toUpperCase();
 
         if (!sexoMayuscula.contains("M")) {
             sexoMayuscula = "H";

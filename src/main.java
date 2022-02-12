@@ -96,7 +96,7 @@ public class main {
          * Este ejercicio contemple el punto 16 del taller
          */
         BienestarPersonal ejercicio16 = new BienestarPersonal();
-        ejercicio16.iniciar();
+        ejercicio16.personaCompleto();
 
     }
 }
