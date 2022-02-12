@@ -80,5 +80,11 @@ public class main {
         Fecha ejercicio13 = new Fecha();
 //        ejercicio13.consultar();
 
+        /**
+         * Este ejercicio contemple el punto 14 del taller
+         */
+        Contador ejercicio14 = new Contador();
+//        ejercicio14.contar();
+
     }
 }
