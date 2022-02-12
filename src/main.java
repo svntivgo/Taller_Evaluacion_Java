@@ -69,10 +69,16 @@ public class main {
 //        ejercicio11.contabilizar();
 
         /**
-         * Este ejercicio contemple el punto 11 del taller
+         * Este ejercicio contemple el punto 12 del taller
          */
         Frase ejercicio12 = new Frase();
 //        ejercicio12.comparar();
+
+        /**
+         * Este ejercicio contemple el punto 13 del taller
+         */
+        Fecha ejercicio13 = new Fecha();
+//        ejercicio13.consultar();
 
     }
 }
