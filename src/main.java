@@ -97,6 +97,8 @@ public class main {
          */
         BienestarPersonal ejercicio16 = new BienestarPersonal();
         ejercicio16.personaCompleto();
+        ejercicio16.personaBasico();
+        ejercicio16.personaManual();
 
     }
 }

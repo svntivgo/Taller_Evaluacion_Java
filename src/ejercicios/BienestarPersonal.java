@@ -14,31 +14,11 @@ public class BienestarPersonal {
         usuario_uno.constructorCompleto(nombreIngresado,edadIngresado,sexoIngresado,pesoIngresado,alturaIngresado);
         Integer imc = usuario_uno.calcularIMC();
         Boolean mayorEdad = usuario_uno.esMayorDeEdad();
-        String resultadoImc = "";
-        String resultadoMayorEdad;
-
-        switch (imc) {
-            case -1:
-                resultadoImc = "Está por debajo del peso ideal";
-                break;
-            case 0:
-                resultadoImc = "Está en el peso ideal";
-                break;
-            case 1:
-                resultadoImc = "Está por encima del peso ideal";
-                break;
-        }
-
-        if (mayorEdad) {
-            resultadoMayorEdad = "Es mayor de edad";
-        } else {
-            resultadoMayorEdad = "Es menor de edad";
-        }
+        String mensajeImcEdad = mensajeImc(imc)+ "\n" +mensajeMayorEdad(mayorEdad);
 
         String mensaje =
                 usuario_uno.toString() + "\n" +
-                resultadoImc + "\n" +
-                resultadoMayorEdad;
+                mensajeImcEdad;
 
         JOptionPane.showMessageDialog(null, mensaje);
     }
@@ -50,6 +30,15 @@ public class BienestarPersonal {
 
         Persona usuario_dos = new Persona();
         usuario_dos.constructorBasico(nombreIngresado,edadIngresado,sexoIngresado);
+        Integer imc = usuario_dos.calcularIMC();
+        Boolean mayorEdad = usuario_dos.esMayorDeEdad();
+        String mensajeImcEdad = mensajeImc(imc)+ "\n" +mensajeMayorEdad(mayorEdad);
+
+        String mensaje =
+                usuario_dos.toString() + "\n" +
+                        mensajeImcEdad;
+
+        JOptionPane.showMessageDialog(null, mensaje);
     }
 
     public void personaManual () {
@@ -65,5 +54,41 @@ public class BienestarPersonal {
         usuario_tres.setSexo(sexoIngresado);
         usuario_tres.setPeso(pesoIngresado);
         usuario_tres.setAltura(alturaIngresado);
+
+        Integer imc = usuario_tres.calcularIMC();
+        Boolean mayorEdad = usuario_tres.esMayorDeEdad();
+        String mensajeImcEdad = mensajeImc(imc)+ "\n" +mensajeMayorEdad(mayorEdad);
+
+        String mensaje =
+                usuario_tres.toString() + "\n" +
+                        mensajeImcEdad;
+
+        JOptionPane.showMessageDialog(null, mensaje);
+    }
+
+    public String mensajeImc (Integer imc) {
+        String resultadoImc = "";
+        switch (imc) {
+            case -1:
+                resultadoImc = "Está por debajo del peso ideal";
+                break;
+            case 0:
+                resultadoImc = "Está en el peso ideal";
+                break;
+            case 1:
+                resultadoImc = "Está por encima del peso ideal";
+                break;
+        }
+        return resultadoImc;
+    }
+
+    public String mensajeMayorEdad (Boolean mayorEdad) {
+        String resultadoMayorEdad = "";
+        if (mayorEdad) {
+            resultadoMayorEdad = "Es mayor de edad";
+        } else {
+            resultadoMayorEdad = "Es menor de edad";
+        }
+        return resultadoMayorEdad;
     }
 }
