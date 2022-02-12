@@ -95,9 +95,8 @@ public class main {
         /**
          * Este ejercicio contemple el punto 16 del taller
          */
-        Persona ejercicio16 = new Persona();
-        ejercicio16.constructorCompleto("Santiago",  29, "H", 73, 183);
-        System.out.println(ejercicio16);
+        BienestarPersonal ejercicio16 = new BienestarPersonal();
+        ejercicio16.iniciar();
 
     }
 }
