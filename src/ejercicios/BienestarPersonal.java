@@ -35,13 +35,12 @@ public class BienestarPersonal {
             resultadoMayorEdad = "Es menor de edad";
         }
 
-        System.out.println(
+        String mensaje =
                 usuario_uno.toString() + "\n" +
                 resultadoImc + "\n" +
-                resultadoMayorEdad
-                );
+                resultadoMayorEdad;
 
-//        JOptionPane.showMessageDialog(null, usuario_uno.toString());
+        JOptionPane.showMessageDialog(null, mensaje);
     }
 
     public void personaBasico () {
