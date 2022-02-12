@@ -1,5 +1,7 @@
 package ejercicios;
 
+import java.util.Locale;
+
 public class Persona {
     private final String hombre = "H";
     private final String mujer = "M";
@@ -52,6 +54,15 @@ public class Persona {
             resultado = true;
         }
         return resultado;
+    }
+
+    public String comprobarSexo (String sexo) {
+        String sexoMayuscula = sexo.toUpperCase();
+
+        if (!sexoMayuscula.contains("M")) {
+            sexoMayuscula = "H";
+        };
+        return sexoMayuscula;
     }
 
 
