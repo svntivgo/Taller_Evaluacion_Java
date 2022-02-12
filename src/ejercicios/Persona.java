@@ -49,6 +49,11 @@ public class Persona {
         this.altura = altura;
     }
 
+    /**
+     * Calcula el IMC de una persona, la altura recibida debe estar en cm
+     * Convierte la altura recibida a metros
+     * @return -1: bajo de peso, 0: peso ideal, 1: sobrepeso, 2: no registra peso
+     */
     public Integer calcularIMC () {
         Double alturaEnMetros = (this.altura/100.0);
         Double imc = (this.peso / Math.pow(alturaEnMetros, 2));
@@ -67,6 +72,10 @@ public class Persona {
         return resultado;
     }
 
+    /**
+     * Evalua si la persona supera la mayoría de edad (18 años)
+     * @return true: es mayor de edad, false: menor de edad
+     */
     public Boolean esMayorDeEdad () {
         Boolean resultado = null;
         if (this.edad >= 18) {
@@ -77,6 +86,11 @@ public class Persona {
         return resultado;
     }
 
+    /**
+     * Comprueba si se ingresó sexo en el constructor de persona
+     * @param userInput string que ingresó el usuario por teclado
+     * @return H: hombre, M: mujer
+     */
     private String comprobarSexo (String userInput) {
         String sexoMayuscula = userInput.toUpperCase();
 
@@ -86,6 +100,10 @@ public class Persona {
         return sexoMayuscula;
     }
 
+    /**
+     * Convierte a un string personalizado las llaves y valores del objeto
+     * @return string personalizado las llaves y valores del objeto
+     */
     public String toString () {
         String informacion =
                 "Nombre: "+ this.nombre + "\n" +
@@ -97,6 +115,10 @@ public class Persona {
         return informacion;
     }
 
+    /**
+     * Genera un numero aleatorio Double convertido a entero de 8 cifras
+     * @return numero DNI generado aleatoriamente
+     */
     private String generaDNI () {
         Integer max = 99999999;
         Integer min = 10000000;

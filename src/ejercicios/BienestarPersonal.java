@@ -66,6 +66,11 @@ public class BienestarPersonal {
         JOptionPane.showMessageDialog(null, mensaje);
     }
 
+    /**
+     * Crea un mensaje acorde al resultado del IMC
+     * @param imc resultado de IMC en el objeto persona
+     * @return mensaje personalizado que indica si la persona tiene o no el peso ideal
+     */
     public String mensajeImc (Integer imc) {
         String resultadoImc = "";
         switch (imc) {
@@ -85,6 +90,11 @@ public class BienestarPersonal {
         return resultadoImc;
     }
 
+    /**
+     * Crea un mensaje acorde a la edad de la persona
+     * @param mayorEdad Booleano que indica si la persona es mayor de edad o no
+     * @return mensaje personalizado que indica si la persona es mayor de edad o no
+     */
     public String mensajeMayorEdad (Boolean mayorEdad) {
         String resultadoMayorEdad = "";
         if (mayorEdad) {
