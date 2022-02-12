@@ -1,5 +1,6 @@
 import ejercicios.*;
 import ejercicios.ejercicio16.BienestarPersonal;
+import ejercicios.ejercicio17.Electrodomestico;
 
 public class main {
     public static void main(String[] args) {
@@ -104,7 +105,7 @@ public class main {
         /**
          * Este ejercicio contempla el punto 17 del taller
          */
-        BienestarPersonal ejercicio17 = new BienestarPersonal();
+        Electrodomestico ejercicio17 = new Electrodomestico();
 
     }
 }
