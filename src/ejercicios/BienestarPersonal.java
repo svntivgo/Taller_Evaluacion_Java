@@ -78,6 +78,9 @@ public class BienestarPersonal {
             case 1:
                 resultadoImc = "Está por encima del peso ideal";
                 break;
+            case 2:
+                resultadoImc = "No tiene peso registrado";
+                break;
         }
         return resultadoImc;
     }

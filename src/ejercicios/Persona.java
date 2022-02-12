@@ -58,8 +58,10 @@ public class Persona {
             resultado = -1;
         } else if (imc >= 20 && imc <= 25) {
             resultado = 0;
-        } else {
+        } else if (imc > 25){
             resultado = 1;
+        } else {
+            resultado = 2;
         }
 
         return resultado;
