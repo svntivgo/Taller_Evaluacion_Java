@@ -1,4 +1,5 @@
 import ejercicios.*;
+import ejercicios.ejercicio16.BienestarPersonal;
 
 public class main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ejercicios;
+package ejercicios.ejercicio16;
 
 import javax.swing.*;
 

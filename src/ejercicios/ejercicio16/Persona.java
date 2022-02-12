@@ -1,4 +1,4 @@
-package ejercicios;
+package ejercicios.ejercicio16;
 
 public class Persona {
     private final String hombre = "H";
