@@ -68,5 +68,11 @@ public class main {
         Frase ejercicio11 = new Frase();
 //        ejercicio11.contabilizar();
 
+        /**
+         * Este ejercicio contemple el punto 11 del taller
+         */
+        Frase ejercicio12 = new Frase();
+//        ejercicio12.comparar();
+
     }
 }

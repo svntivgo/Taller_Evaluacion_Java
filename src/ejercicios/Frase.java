@@ -67,4 +67,30 @@ public class Frase {
         System.out.println("La frase contiene "+ o +" o");
         System.out.println("La frase contiene "+ u +" u");
     }
+
+    /**
+     * Compara dos palabras
+     */
+    public void comparar () {
+        JOptionPane.showMessageDialog(null, "El programa compara dos palabras");
+        String palabra_uno = JOptionPane.showInputDialog("Ingrese una palabra");
+        String palabra_dos = JOptionPane.showInputDialog("Ingrese otra palabra");
+
+        palabra_uno = palabra_uno.toLowerCase();
+        palabra_dos = palabra_dos.toLowerCase();
+
+        if (palabra_uno.contains(palabra_dos)) {
+            JOptionPane.showMessageDialog(
+                    null,
+                    palabra_uno +" y "+ palabra_dos +" son iguales"
+            );
+        } else {
+            JOptionPane.showMessageDialog(
+                    null,
+                    "La primera palabra contiene "+palabra_uno.length()+
+                            " caracteres; Mientras que la segunda palabra contiene "+palabra_dos.length()+" caracteres; "
+
+            );
+        }
+    }
 }
