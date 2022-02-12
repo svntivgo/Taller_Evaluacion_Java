@@ -1,7 +1,5 @@
 package ejercicios;
 
-import java.util.Locale;
-
 public class Persona {
     private final String hombre = "H";
     private final String mujer = "M";
@@ -56,7 +54,7 @@ public class Persona {
         return resultado;
     }
 
-    public String comprobarSexo (String sexo) {
+    private String comprobarSexo (String sexo) {
         String sexoMayuscula = sexo.toUpperCase();
 
         if (!sexoMayuscula.contains("M")) {
@@ -74,6 +72,16 @@ public class Persona {
                 "Peso: "+ this.peso + "\n" +
                 "Altura: "+ this.altura;
         return informacion;
+    }
+
+    private Integer generaDNI () {
+        Integer max = 99999999;
+        Integer min = 10000000;
+        Double numeroAleatorio = Math.random()*max + min;
+        Integer numeroAleatorioEntero = numeroAleatorio.intValue();
+
+        return numeroAleatorioEntero;
+
     }
 
 
