@@ -28,6 +28,22 @@ public abstract class Electrodomestico {
         this.peso = peso;
     }
 
+    public String getColor() {
+        return color;
+    }
+
+    public Character getConsumoEnergetico() {
+        return consumoEnergetico;
+    }
+
+    public Double getPrecioBase() {
+        return precioBase;
+    }
+
+    public Double getPeso() {
+        return peso;
+    }
+
     private Character comprobarConsumoEnergetico(Character letraIngresada) {
         Character consumoPorDefecto = letraIngresada;
         if (!consumos.toString().contains(letraIngresada.toString())) {
