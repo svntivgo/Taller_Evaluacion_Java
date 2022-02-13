@@ -85,7 +85,7 @@ public class Videojuego implements Entregable {
 
     /**
      * Devuelve el estado del atributo entregado
-     * @return
+     * @return estado de la entrega
      */
     @Override
     public Boolean isEntregado() {
@@ -95,11 +95,16 @@ public class Videojuego implements Entregable {
     /**
      * Compara las horas estimadas en los videojuegos y en las series el numero de temporadas.
      *
-     * @param a
+     * @param a objeto con el que se quiere comparar
+     * @return Mensaje de la comparación
      */
     @Override
     public String compareTo(Object a) {
-        String mensaje = "";
+        String mensaje =
+                "El videojuego "+this.titulo+" tiene "+this.horasEstimadas+" horas estimadas de juego"+"\n"+
+                "El videojuego "+a.getTitulo()+" tiene "+a.getHorasEstimadas()+" horas estimadas de juego"+"\n"+
+                "El videojuego "+this.titulo+" tiene una diferencia de "+(this.horasEstimadas-a.getHorasEstimadas())+" respecto al videojuego "+a.getTitulo()
+                ;
         return mensaje;
     }
 }

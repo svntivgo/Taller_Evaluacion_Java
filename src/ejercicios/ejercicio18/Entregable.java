@@ -13,13 +13,13 @@ public interface Entregable {
 
     /**
      * Devuelve el estado del atributo entregado
-     * @return
+     * @return estado de la entrega
      */
     public Boolean isEntregado();
 
     /**
      * Compara las horas estimadas en los videojuegos y en las series el numero de temporadas.
-     * @param a
+     * @param a objeto con el que se quiere comparar
      */
     public String compareTo (Object a);
 }
