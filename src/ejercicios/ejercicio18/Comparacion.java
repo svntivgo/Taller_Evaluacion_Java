@@ -17,12 +17,77 @@ public class Comparacion {
         arrayVideoJuegos[3] = new Videojuego("Crash Bandicoot", 50,"Aventura","Naughty Dog");
         arrayVideoJuegos[4] = new Videojuego("Need for Speed", 30,"Conduccion","EA");
 
-        System.out.println(arraySeries[0].isEntregado());
         arraySeries[0].entregar();
-        System.out.println(arraySeries[0].isEntregado());
-        arraySeries[0].devolver();
-        System.out.println(arraySeries[0].isEntregado());
-        arraySeries[0].entregar();
-        System.out.println(arraySeries[0].isEntregado());
+        arraySeries[2].entregar();
+        arraySeries[4].entregar();
+
+        arrayVideoJuegos[0].entregar();
+        arrayVideoJuegos[2].entregar();
+
+        Integer contadorSeriesEntregadas = 0;
+        Integer contadorVideoJuegosEntregados = 0;
+
+        for (int i = 0; i < arraySeries.length; i++) {
+            Boolean entregado = arraySeries[i].isEntregado();
+            if (entregado == true) {
+                contadorSeriesEntregadas++;
+            }
+        }
+
+        for (int i = 0; i < arrayVideoJuegos.length; i++) {
+            Boolean entregado = arrayVideoJuegos[i].isEntregado();
+            if (entregado == true) {
+                contadorVideoJuegosEntregados++;
+            }
+        }
+
+        System.out.println("Hay "+ contadorSeriesEntregadas +" series entregadas");
+        System.out.println("Hay "+ contadorVideoJuegosEntregados +" videojuegos entregados");
+
+        for (int i = 0; i < arraySeries.length; i++) {
+            Boolean entregado = arraySeries[i].isEntregado();
+            if (entregado == true) {
+                arraySeries[i].devolver();
+            }
+        }
+
+        for (int i = 0; i < arrayVideoJuegos.length; i++) {
+            Boolean entregado = arrayVideoJuegos[i].isEntregado();
+            if (entregado == true) {
+                arrayVideoJuegos[i].devolver();
+            }
+        }
+
+        Integer recordTemporadas = 0;
+        Integer serieRecord = 0;
+
+        for (int i = 0; i < arraySeries.length; i++) {
+
+            if (arraySeries[i].getNumeroDeTemporadas() > recordTemporadas) {
+                recordTemporadas = arraySeries[i].getNumeroDeTemporadas();
+                serieRecord = i;
+            }
+        }
+
+        Integer recordHoras = 0;
+        Integer juegoRecord = 0;
+
+        for (int i = 0; i < arrayVideoJuegos.length; i++) {
+
+            if (arrayVideoJuegos[i].getHorasEstimadas() > recordHoras) {
+                recordHoras = arrayVideoJuegos[i].getHorasEstimadas();
+                juegoRecord = i;
+            }
+        }
+
+        System.out.println(
+                "La serie con mas temporadas es:"+"\n"+
+                arraySeries[serieRecord].toString())
+        ;
+
+        System.out.println(
+                "El juego con mas horas es:"+"\n"+
+                arrayVideoJuegos[juegoRecord].toString())
+        ;
     }
 }
