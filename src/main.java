@@ -1,6 +1,7 @@
 import ejercicios.*;
 import ejercicios.ejercicio16.BienestarPersonal;
 import ejercicios.ejercicio17.PrecioFinal;
+import ejercicios.ejercicio18.Serie;
 
 public class main {
     public static void main(String[] args) {
@@ -107,6 +108,12 @@ public class main {
          */
         PrecioFinal ejercicio17 = new PrecioFinal();
 //        ejercicio17.mostrar();
+
+        /**
+         * Este ejercicio contempla el punto 18 del taller
+         */
+        Serie ejercicio18 = new Serie("Friends",9,"Comedia","HBO");
+        System.out.println(ejercicio18.toString());
 
     }
 }
