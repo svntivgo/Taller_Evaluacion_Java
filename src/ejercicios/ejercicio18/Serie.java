@@ -100,6 +100,11 @@ public class Serie implements Entregable {
      */
     @Override
     public String compareTo(String otroObjetoTitulo, Integer otroObjetoDuracion) {
-        return null;
+        String mensaje =
+                "La serie "+this.titulo+" tiene "+this.numeroDeTemporadas+" temporadas"+"\n"+
+                "La serie "+otroObjetoTitulo+" tiene "+otroObjetoDuracion+" temporadas"+"\n"+
+                "La serie "+this.titulo+" tiene una diferencia de "+(this.numeroDeTemporadas-otroObjetoDuracion)+" temporadas respecto a la serie "+otroObjetoTitulo
+                ;
+        return mensaje;
     }
 }

@@ -114,8 +114,10 @@ public class main {
          * Este ejercicio contempla el punto 18 del taller
          */
         Serie ejercicio18_1 = new Serie("Friends",9,"Comedia","HBO");
-        System.out.println(ejercicio18_1.toString());
+//        System.out.println(ejercicio18_1.toString());
         Videojuego ejercicio18_2 = new Videojuego("God of War", 60,"Aventura","Ubisoft");
-        System.out.println(ejercicio18_2.toString());
+        Videojuego ejercicio18_3 = new Videojuego("Mafia", 80,"Aventura","Ubisoft");
+//        System.out.println(ejercicio18_2.toString());
+        System.out.println(ejercicio18_2.compareTo(ejercicio18_3.getTitulo(), ejercicio18_3.getHorasEstimadas()));
     }
 }
