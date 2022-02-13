@@ -60,4 +60,39 @@ public abstract class Electrodomestico {
         return colorPorDefecto;
     }
 
+    public Double precioFinal() {
+        Double precioConAumentos = this.precioBase;
+        switch (this.consumoEnergetico) {
+            case 'a':
+                precioConAumentos += 100.0;
+                break;
+            case 'b':
+                precioConAumentos += 80.0;
+                break;
+            case 'c':
+                precioConAumentos += 60.0;
+                break;
+            case 'd':
+                precioConAumentos += 50.0;
+                break;
+            case 'e':
+                precioConAumentos += 30.0;
+                break;
+            case 'f':
+                precioConAumentos += 10.0;
+                break;
+        }
+
+        if (this.peso < 20) {
+            precioConAumentos += 10.0;
+        } else if (this.peso >= 20.0 && this.peso < 50.0) {
+            precioConAumentos += 50.0;
+        } else if (this.peso >= 50.0 && this.peso < 80.0) {
+            precioConAumentos += 80.0;
+        } else if (this.peso >= 80.0) {
+            precioConAumentos += 100.0;
+        }
+        return precioConAumentos;
+    }
+
 }
