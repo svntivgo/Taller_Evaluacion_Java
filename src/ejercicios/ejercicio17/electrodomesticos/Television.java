@@ -37,7 +37,7 @@ public class Television extends Electrodomestico {
     public Double precioFinal() {
         Double precioAumentado = 0.0;
 
-        if (resolucion > 40.0) {
+        if (this.resolucion > 40.0) {
             precioAumentado = 50.0;
         }
 

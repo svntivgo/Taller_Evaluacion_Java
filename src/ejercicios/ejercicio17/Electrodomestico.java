@@ -48,7 +48,7 @@ public abstract class Electrodomestico {
     private String comprobarConsumoEnergetico(String letraIngresada) {
         String consumoPorDefecto = letraIngresada.toLowerCase();
 
-        if (consumos.toString().contains(letraIngresada.toLowerCase())) {
+        if (!consumos.toString().contains(letraIngresada.toLowerCase())) {
                 consumoPorDefecto = consumos[consumos.length -1];
             }
         return consumoPorDefecto;

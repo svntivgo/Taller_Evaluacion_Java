@@ -108,8 +108,42 @@ public class main {
          * Este ejercicio contempla el punto 17 del taller
          */
         Electrodomestico ejercicio17[] = new Electrodomestico[10];
-        ejercicio17[0] = new Television("Negro", "B",100.00,30.0,30.0,false);
-        System.out.println(ejercicio17[0].precioFinal());
+//        ejercicio17[0] = new Television("Negro", "D",100.00,30.0,30.0,false);
+//        ejercicio17[1] = new Television("Azul", "D",200.00,30.0,30.0,true);
+//        ejercicio17[2] = new Television("Rojo", "D",100.00,30.0,30.0,false);
+//        ejercicio17[3] = new Television("Gris", "D",200.00,30.0,30.0,true);
+//        ejercicio17[4] = new Television("Blanco", "D",100.00,30.0,30.0,false);
+//        ejercicio17[5] = new Lavadora("Negro","a",200.00,30.0,40.0);
+//        ejercicio17[6] = new Lavadora("Blanco","a",150.00,30.0,20.0);
+//        ejercicio17[7] = new Lavadora("Gris","a",200.00,30.0,40.0);
+//        ejercicio17[8] = new Lavadora("Negro","a",150.00,30.0,20.0);
+//        ejercicio17[9] = new Lavadora("Rojo","a",200.00,30.0,40.0);
+
+        ejercicio17[0] = new Television("Negro", "d",100.00,20.0,30.0,false);
+
+        ejercicio17[1] = new Television("Negro", "D",100.00,20.0,30.0,false);
+
+        ejercicio17[2] = new Television("Negro", "D",100.00,20.0,30.0,false);
+
+        ejercicio17[3] = new Television("Negro", "D",100.00,20.0,30.0,false);
+
+        ejercicio17[4] = new Television("Negro", "D",100.00,20.0,30.0,false);
+
+        ejercicio17[5] = new Lavadora("Negro","a",200.00,20.0,20.0);
+
+        ejercicio17[6] = new Lavadora("Blanco","A",200.00,20.0,20.0);
+
+        ejercicio17[7] = new Lavadora("Gris","A",200.00,20.0,20.0);
+
+        ejercicio17[8] = new Lavadora("Negro","A",200.00,20.0,20.0);
+
+        ejercicio17[9] = new Lavadora("Rojo","A",200.00,20.0,20.0);
+
+        for (int i = 0; i < ejercicio17.length; i++) {
+            if (ejercicio17[i] instanceof Television) {
+                System.out.println(ejercicio17[i].precioFinal());
+            }
+        }
 
     }
 }
