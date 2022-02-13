@@ -98,7 +98,8 @@ public class Videojuego implements Entregable {
      * @param a
      */
     @Override
-    public void compareTo(Object a) {
-
+    public String compareTo(Object a) {
+        String mensaje = "";
+        return mensaje;
     }
 }

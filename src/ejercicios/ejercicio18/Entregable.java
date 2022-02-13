@@ -21,5 +21,5 @@ public interface Entregable {
      * Compara las horas estimadas en los videojuegos y en las series el numero de temporadas.
      * @param a
      */
-    public void compareTo (Object a);
+    public String compareTo (Object a);
 }
