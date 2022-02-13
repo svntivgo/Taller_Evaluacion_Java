@@ -2,9 +2,9 @@ package ejercicios.ejercicio17;
 
 public abstract class Electrodomestico {
     public String[] colores = {"blanco", "negro", "rojo", "azul", "gris"};
-    public Character[] consumos = {'a', 'b', 'c', 'd', 'e', 'f'};
+    public String[] consumos = {"a", "b", "c", "d", "e", "f"};
     public String color = colores[0];
-    public Character consumoEnergetico = consumos[consumos.length-1];
+    public String consumoEnergetico = consumos[consumos.length-1];
     public Double precioBase = 100.0;
     public Double peso = 5.0;
 
@@ -17,7 +17,7 @@ public abstract class Electrodomestico {
         this.peso = peso;
     }
 
-    public Electrodomestico (String color, Character consumoEnergetico, Double precioBase, Double peso) {
+    public Electrodomestico (String color, String consumoEnergetico, Double precioBase, Double peso) {
         this.color = comprobarColor(color);
         this.consumoEnergetico = comprobarConsumoEnergetico(consumoEnergetico);
         this.precioBase = precioBase;
@@ -28,7 +28,7 @@ public abstract class Electrodomestico {
         return color;
     }
 
-    public Character getConsumoEnergetico() {
+    public String getConsumoEnergetico() {
         return consumoEnergetico;
     }
 
@@ -45,9 +45,10 @@ public abstract class Electrodomestico {
      * @param letraIngresada Letra que ingresa el usuario
      * @return letra ingresada por el usuario o una por defecto
      */
-    private Character comprobarConsumoEnergetico(Character letraIngresada) {
-        Character consumoPorDefecto = letraIngresada;
-        if (!consumos.toString().contains(letraIngresada.toString())) {
+    private String comprobarConsumoEnergetico(String letraIngresada) {
+        String consumoPorDefecto = letraIngresada.toLowerCase();
+
+        if (!consumos.toString().contains(letraIngresada.toLowerCase())) {
                 consumoPorDefecto = consumos[consumos.length -1];
             }
         return consumoPorDefecto;
@@ -59,7 +60,7 @@ public abstract class Electrodomestico {
      * @return color ingresado por el usuario o un color por defecto
      */
     private String comprobarColor(String colorIngresado) {
-        String colorPorDefecto = colorIngresado;
+        String colorPorDefecto = colorIngresado.toLowerCase();
         if (!colores.toString().contains(colorIngresado)) {
             colorPorDefecto = colores[0];
         }
@@ -72,28 +73,30 @@ public abstract class Electrodomestico {
      */
     public Double precioFinal() {
         Double precioConAumentos = this.precioBase;
-        switch (this.consumoEnergetico) {
-            case 'a':
+        String consumoEnergeticoString = this.consumoEnergetico;
+
+        switch (consumoEnergeticoString) {
+            case "a":
                 precioConAumentos += 100.0;
                 break;
-            case 'b':
+            case "b":
                 precioConAumentos += 80.0;
                 break;
-            case 'c':
+            case "c":
                 precioConAumentos += 60.0;
                 break;
-            case 'd':
+            case "d":
                 precioConAumentos += 50.0;
                 break;
-            case 'e':
+            case "e":
                 precioConAumentos += 30.0;
                 break;
-            case 'f':
+            case "f":
                 precioConAumentos += 10.0;
                 break;
         }
 
-        if (this.peso < 20) {
+        if (this.peso < 20.0) {
             precioConAumentos += 10.0;
         } else if (this.peso >= 20.0 && this.peso < 50.0) {
             precioConAumentos += 50.0;

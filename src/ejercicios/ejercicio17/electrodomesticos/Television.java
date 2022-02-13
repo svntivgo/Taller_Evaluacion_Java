@@ -15,7 +15,7 @@ public class Television extends Electrodomestico {
         this.peso = peso;
     }
 
-    public Television (String color, Character consumoEnergetico, Double precioBase, Double peso, Double resolucion, Boolean sintonizadorTdt) {
+    public Television (String color, String consumoEnergetico, Double precioBase, Double peso, Double resolucion, Boolean sintonizadorTdt) {
         super(color, consumoEnergetico, precioBase, peso);
         this.resolucion = resolucion;
         this.sintonizadorTdt = sintonizadorTdt;
@@ -29,5 +29,18 @@ public class Television extends Electrodomestico {
         return sintonizadorTdt;
     }
 
+    /**
+     * Adiciona al precio final si el tv tiene más de 40 pulgadas
+     * @return precio final y si cumple el requisito se suma 50 más
+     */
+    @Override
+    public Double precioFinal() {
+        Double precioAumentado = 0.0;
 
+        if (resolucion > 40.0) {
+            precioAumentado = 50.0;
+        }
+
+        return super.precioFinal() + precioAumentado;
+    }
 }
