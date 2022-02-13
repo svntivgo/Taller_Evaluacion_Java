@@ -12,11 +12,17 @@ public class Comparacion {
         arraySeries[4] = new Serie("Succession",3,"Drama","HBO");
 
         arrayVideoJuegos[0] = new Videojuego("God of War", 60,"Aventura","Ubisoft");
-        arrayVideoJuegos[2] = new Videojuego("Call of Duty", 30,"Accion","Activision");
-        arrayVideoJuegos[3] = new Videojuego("GTA V", 80,"Aventura","Rockstar");
-        arrayVideoJuegos[4] = new Videojuego("Crash Bandicoot", 50,"Aventura","Naughty Dog");
-        arrayVideoJuegos[5] = new Videojuego("Need for Speed", 30,"Conduccion","EA");
+        arrayVideoJuegos[1] = new Videojuego("Call of Duty", 30,"Accion","Activision");
+        arrayVideoJuegos[2] = new Videojuego("GTA V", 80,"Aventura","Rockstar");
+        arrayVideoJuegos[3] = new Videojuego("Crash Bandicoot", 50,"Aventura","Naughty Dog");
+        arrayVideoJuegos[4] = new Videojuego("Need for Speed", 30,"Conduccion","EA");
 
-
+        System.out.println(arraySeries[0].isEntregado());
+        arraySeries[0].entregar();
+        System.out.println(arraySeries[0].isEntregado());
+        arraySeries[0].devolver();
+        System.out.println(arraySeries[0].isEntregado());
+        arraySeries[0].entregar();
+        System.out.println(arraySeries[0].isEntregado());
     }
 }

@@ -71,7 +71,7 @@ public class Serie implements Entregable {
      */
     @Override
     public void entregar() {
-
+        this.entregado = true;
     }
 
     /**
@@ -79,7 +79,7 @@ public class Serie implements Entregable {
      */
     @Override
     public void devolver() {
-
+        this.entregado = false;
     }
 
     /**
@@ -89,7 +89,7 @@ public class Serie implements Entregable {
      */
     @Override
     public Boolean isEntregado() {
-        return null;
+        return this.entregado;
     }
 
     /**
