@@ -1,6 +1,7 @@
 import ejercicios.*;
 import ejercicios.ejercicio16.BienestarPersonal;
 import ejercicios.ejercicio17.Electrodomestico;
+import ejercicios.ejercicio17.electrodomesticos.Lavadora;
 
 public class main {
     public static void main(String[] args) {
@@ -105,7 +106,8 @@ public class main {
         /**
          * Este ejercicio contempla el punto 17 del taller
          */
-        Electrodomestico ejercicio17 = new Electrodomestico();
+        Lavadora ejercicio17 = new Lavadora();
+        ejercicio17.imprimir();
 
     }
 }
