@@ -2,6 +2,7 @@ import ejercicios.*;
 import ejercicios.ejercicio16.BienestarPersonal;
 import ejercicios.ejercicio17.PrecioFinal;
 import ejercicios.ejercicio18.Serie;
+import ejercicios.ejercicio18.Videojuego;
 
 public class main {
     public static void main(String[] args) {
@@ -112,8 +113,9 @@ public class main {
         /**
          * Este ejercicio contempla el punto 18 del taller
          */
-        Serie ejercicio18 = new Serie("Friends",9,"Comedia","HBO");
-        System.out.println(ejercicio18.toString());
-
+        Serie ejercicio18_1 = new Serie("Friends",9,"Comedia","HBO");
+        System.out.println(ejercicio18_1.toString());
+        Videojuego ejercicio18_2 = new Videojuego("God of War", 60,"Aventura","Ubisoft");
+        System.out.println(ejercicio18_2.toString());
     }
 }
