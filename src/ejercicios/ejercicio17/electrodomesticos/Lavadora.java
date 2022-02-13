@@ -25,13 +25,19 @@ public class Lavadora extends Electrodomestico {
         return carga;
     }
 
-    public void imprimir () {
-        System.out.println(
-                this.precioBase + "\n" +
-                this.carga
-        );
+    /**
+     * Si la lavadora pesa mas de 30.0 se adicionan 50.0 al precio final
+     * @return nuevo precio final
+     */
+    @Override
+    public Double precioFinal() {
+        Double precioAumentado = 0.0;
+
+        if (this.carga > 30.0) {
+            precioAumentado = 50.0;
+        }
+
+        return super.precioFinal() + precioAumentado;
     }
-
-
 
 }
