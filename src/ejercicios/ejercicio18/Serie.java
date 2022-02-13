@@ -93,12 +93,13 @@ public class Serie implements Entregable {
     }
 
     /**
-     * Compara las horas estimadas en los videojuegos y en las series el numero de temporadas.
-     *
-     * @param a objeto con el que se quiere comparar
+     * Compara las horas estimadas en los videojuegos y en las series el numero de temporadas
+     * @param otroObjetoTitulo Titulo del objeto a comparar
+     * @param otroObjetoDuracion Duracion del objeto a comparar
+     * @return Mensaje de la comparación
      */
     @Override
-    public String compareTo(Object a) {
+    public String compareTo(String otroObjetoTitulo, Integer otroObjetoDuracion) {
         return null;
     }
 }

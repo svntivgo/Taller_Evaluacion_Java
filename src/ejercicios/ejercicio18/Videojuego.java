@@ -93,13 +93,13 @@ public class Videojuego implements Entregable {
     }
 
     /**
-     * Compara las horas estimadas en los videojuegos y en las series el numero de temporadas.
-     *
-     * @param a objeto con el que se quiere comparar
+     * Compara las horas estimadas en los videojuegos y en las series el numero de temporadas
+     * @param otroObjetoTitulo Titulo del objeto a comparar
+     * @param otroObjetoDuracion Duracion del objeto a comparar
      * @return Mensaje de la comparación
      */
     @Override
-    public String compareTo(Object a) {
+    public String compareTo(String otroObjetoTitulo, Integer otroObjetoDuracion) {
         String mensaje = ""
 //                "El videojuego "+this.titulo+" tiene "+this.horasEstimadas+" horas estimadas de juego"+"\n"+
 //                "El videojuego "+a.horasEstimadas()+" tiene "+a.getHorasEstimadas()+" horas estimadas de juego"+"\n"+
