@@ -40,6 +40,11 @@ public abstract class Electrodomestico {
         return peso;
     }
 
+    /**
+     * Comprueba el consumo si el consumo energético ingresado existe, sino devuelve un valor por defecto.
+     * @param letraIngresada Letra que ingresa el usuario
+     * @return letra ingresada por el usuario o una por defecto
+     */
     private Character comprobarConsumoEnergetico(Character letraIngresada) {
         Character consumoPorDefecto = letraIngresada;
         if (!consumos.toString().contains(letraIngresada.toString())) {
@@ -48,6 +53,11 @@ public abstract class Electrodomestico {
         return consumoPorDefecto;
     }
 
+    /**
+     * Comprueba si el color ingresado por el usuario existe, sino devuelve un color por defecto
+     * @param colorIngresado color ingresado por el usuario
+     * @return color ingresado por el usuario o un color por defecto
+     */
     private String comprobarColor(String colorIngresado) {
         String colorPorDefecto = colorIngresado;
         if (!colores.toString().contains(colorIngresado)) {
@@ -56,6 +66,10 @@ public abstract class Electrodomestico {
         return colorPorDefecto;
     }
 
+    /**
+     * Calcula el precio final, dependiendo del consumo energético y el peso
+     * @return precio final con aumentos
+     */
     public Double precioFinal() {
         Double precioConAumentos = this.precioBase;
         switch (this.consumoEnergetico) {
