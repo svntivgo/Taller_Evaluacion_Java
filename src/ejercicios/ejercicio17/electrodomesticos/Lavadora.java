@@ -8,9 +8,17 @@ public class Lavadora extends Electrodomestico {
     public Lavadora () {
     }
 
-    public Lavadora (Double precio, Double peso) {
-        this.precioBase = precio;
+    public Lavadora (Double precioBase, Double peso) {
+        this.precioBase = precioBase;
         this.peso = peso;
+    }
+
+    public Lavadora (String color, Character consumoEnergetico, Double precioBase, Double peso, Double carga) {
+        this.color = color;
+        this.consumoEnergetico = consumoEnergetico;
+        this.precioBase = precioBase;
+        this.peso = peso;
+        this.carga = carga;
     }
 
     public void imprimir () {

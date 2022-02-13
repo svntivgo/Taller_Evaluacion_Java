@@ -1,17 +1,15 @@
 package ejercicios.ejercicio17;
 
 public abstract class Electrodomestico {
-    public String color;
-    public Character consumoEnergetico;
-    public Double precioBase, peso;
     public String[] colores = {"blanco", "negro", "rojo", "azul", "gris"};
     public Character[] consumos = {'a', 'b', 'c', 'd', 'e', 'f'};
+    public String color = colores[0];
+    public Character consumoEnergetico = consumos[consumos.length-1];
+    public Double precioBase = 100.0;
+    public Double peso = 5.0;
+
 
     public Electrodomestico () {
-        this.color = colores[0];
-        this.consumoEnergetico = 'F';
-        this.precioBase = 100.0;
-        this.peso = 5.0;
     }
 
     public Electrodomestico (Double precioBase, Double peso) {
