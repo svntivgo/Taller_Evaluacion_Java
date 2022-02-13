@@ -3,15 +3,19 @@ package ejercicios.ejercicio17.electrodomesticos;
 import ejercicios.ejercicio17.Electrodomestico;
 
 public class Lavadora extends Electrodomestico {
-    Double carga;
+    Double carga = 5.0;
 
     public Lavadora () {
-        this.carga = 5.0;
+    }
+
+    public Lavadora (Double precio, Double peso) {
+        this.precioBase = precio;
+        this.peso = peso;
     }
 
     public void imprimir () {
         System.out.println(
-                this.getColor() + "\n" +
+                this.precioBase + "\n" +
                 this.carga
         );
     }
