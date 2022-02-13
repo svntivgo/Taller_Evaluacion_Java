@@ -21,6 +21,10 @@ public class Lavadora extends Electrodomestico {
         this.carga = carga;
     }
 
+    public Double getCarga() {
+        return carga;
+    }
+
     public void imprimir () {
         System.out.println(
                 this.precioBase + "\n" +
