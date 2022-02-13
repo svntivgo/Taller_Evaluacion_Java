@@ -100,10 +100,10 @@ public class Videojuego implements Entregable {
      */
     @Override
     public String compareTo(Object a) {
-        String mensaje =
-                "El videojuego "+this.titulo+" tiene "+this.horasEstimadas+" horas estimadas de juego"+"\n"+
-                "El videojuego "+a.getTitulo()+" tiene "+a.getHorasEstimadas()+" horas estimadas de juego"+"\n"+
-                "El videojuego "+this.titulo+" tiene una diferencia de "+(this.horasEstimadas-a.getHorasEstimadas())+" respecto al videojuego "+a.getTitulo()
+        String mensaje = ""
+//                "El videojuego "+this.titulo+" tiene "+this.horasEstimadas+" horas estimadas de juego"+"\n"+
+//                "El videojuego "+a.horasEstimadas()+" tiene "+a.getHorasEstimadas()+" horas estimadas de juego"+"\n"+
+//                "El videojuego "+this.titulo+" tiene una diferencia de "+(this.horasEstimadas-a.getHorasEstimadas())+" respecto al videojuego "+a.getTitulo()
                 ;
         return mensaje;
     }
