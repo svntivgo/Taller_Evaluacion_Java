@@ -107,8 +107,9 @@ public class main {
         /**
          * Este ejercicio contempla el punto 17 del taller
          */
-        Television ejercicio17 = new Television("Negro", "F",200.00,10.0,50.0,false);
-        System.out.println(ejercicio17.precioFinal());
+        Electrodomestico ejercicio17[] = new Electrodomestico[10];
+        ejercicio17[0] = new Television("Negro", "B",100.00,30.0,30.0,false);
+        System.out.println(ejercicio17[0].precioFinal());
 
     }
 }
