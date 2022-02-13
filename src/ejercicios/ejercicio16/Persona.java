@@ -1,29 +1,36 @@
 package ejercicios.ejercicio16;
 
 public class Persona {
-    private final String hombre = "H";
-    private final String mujer = "M";
-    private String nombre, dni, sexo;
-    private Integer edad, peso, altura, pesoBajo, pesoIdeal, pesoAlto;
+    protected String sexo = "H";
+    private String nombre = "";
+    private Integer edad = 0;
+    private String dni;
+    private Integer peso = 0;
+    private Integer altura = 0;
+
 
     public Persona () {
-        this.nombre = "";
-        this.edad = 0;
+        this.nombre = nombre;
+        this.edad = edad;
         this.dni = generaDNI();
-        this.sexo = hombre;
-        this.peso = 0;
-        this.altura = 0;
+        this.sexo = sexo;
+        this.peso = peso;
+        this.altura = altura;
     }
 
-    public void constructorBasico (String nombre, Integer edad, String sexo) {
+    public Persona (String nombre, Integer edad, String sexo) {
         this.nombre = nombre;
         this.edad = edad;
+        this.dni = generaDNI();
         this.sexo = comprobarSexo(sexo);
+        this.peso = peso;
+        this.altura = altura;
     }
 
-    public void constructorCompleto (String nombre, Integer edad, String sexo, Integer peso, Integer altura) {
+    public Persona (String nombre, Integer edad, String sexo, Integer peso, Integer altura) {
         this.nombre = nombre;
         this.edad = edad;
+        this.dni = generaDNI();
         this.sexo = comprobarSexo(sexo);
         this.peso = peso;
         this.altura = altura;
@@ -52,12 +59,13 @@ public class Persona {
     /**
      * Calcula el IMC de una persona, la altura recibida debe estar en cm
      * Convierte la altura recibida a metros
-     * @return -1: bajo de peso, 0: peso ideal, 1: sobrepeso, 2: no registra peso
+     * @return -1: bajo de peso, 0: peso ideal, 1: sobrepeso
      */
     public Integer calcularIMC () {
+
         Double alturaEnMetros = (this.altura/100.0);
         Double imc = (this.peso / Math.pow(alturaEnMetros, 2));
-        Integer resultado = null;
+        Integer resultado = 2;
 
         if (imc < 20) {
             resultado = -1;
@@ -65,8 +73,6 @@ public class Persona {
             resultado = 0;
         } else if (imc > 25){
             resultado = 1;
-        } else {
-            resultado = 2;
         }
 
         return resultado;

@@ -10,8 +10,7 @@ public class BienestarPersonal {
         Integer pesoIngresado = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el peso usuario 1"));
         Integer alturaIngresado = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la altura en centimetros usuario 1"));
 
-        Persona usuario_uno = new Persona();
-        usuario_uno.constructorCompleto(nombreIngresado,edadIngresado,sexoIngresado,pesoIngresado,alturaIngresado);
+        Persona usuario_uno = new Persona(nombreIngresado,edadIngresado,sexoIngresado,pesoIngresado,alturaIngresado);
         Integer imc = usuario_uno.calcularIMC();
         Boolean mayorEdad = usuario_uno.esMayorDeEdad();
         String mensajeImcEdad = mensajeImc(imc)+ "\n" +mensajeMayorEdad(mayorEdad);
@@ -28,8 +27,7 @@ public class BienestarPersonal {
         Integer edadIngresado = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la edad usuario 2"));
         String sexoIngresado = JOptionPane.showInputDialog("Ingrese el sexo usuario 2 (H si es hombre, M si es mujer)").toUpperCase();
 
-        Persona usuario_dos = new Persona();
-        usuario_dos.constructorBasico(nombreIngresado,edadIngresado,sexoIngresado);
+        Persona usuario_dos = new Persona(nombreIngresado,edadIngresado,sexoIngresado);
         Integer imc = usuario_dos.calcularIMC();
         Boolean mayorEdad = usuario_dos.esMayorDeEdad();
         String mensajeImcEdad = mensajeImc(imc)+ "\n" +mensajeMayorEdad(mayorEdad);

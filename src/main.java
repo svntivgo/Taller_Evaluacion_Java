@@ -99,15 +99,15 @@ public class main {
          * Este ejercicio contempla el punto 16 del taller
          */
         BienestarPersonal ejercicio16 = new BienestarPersonal();
-//        ejercicio16.personaCompleto();
-//        ejercicio16.personaBasico();
-//        ejercicio16.personaManual();
+        ejercicio16.personaCompleto();
+        ejercicio16.personaBasico();
+        ejercicio16.personaManual();
 
         /**
          * Este ejercicio contempla el punto 17 del taller
          */
         Lavadora ejercicio17 = new Lavadora();
-        ejercicio17.imprimir();
+//        ejercicio17.imprimir();
 
     }
 }
