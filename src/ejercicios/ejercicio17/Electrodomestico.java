@@ -1,5 +1,7 @@
 package ejercicios.ejercicio17;
 
+import java.util.Arrays;
+
 public abstract class Electrodomestico {
     public String[] colores = {"blanco", "negro", "rojo", "azul", "gris"};
     public String[] consumos = {"a", "b", "c", "d", "e", "f"};
@@ -48,7 +50,7 @@ public abstract class Electrodomestico {
     private String comprobarConsumoEnergetico(String letraIngresada) {
         String consumoPorDefecto = letraIngresada.toLowerCase();
 
-        if (!consumos.toString().contains(letraIngresada.toLowerCase())) {
+        if (!Arrays.toString(consumos).contains(letraIngresada.toLowerCase())) {
                 consumoPorDefecto = consumos[consumos.length -1];
             }
         return consumoPorDefecto;
@@ -61,7 +63,7 @@ public abstract class Electrodomestico {
      */
     private String comprobarColor(String colorIngresado) {
         String colorPorDefecto = colorIngresado.toLowerCase();
-        if (!colores.toString().contains(colorIngresado)) {
+        if (!Arrays.toString(colores).toString().contains(colorIngresado)) {
             colorPorDefecto = colores[0];
         }
         return colorPorDefecto;
