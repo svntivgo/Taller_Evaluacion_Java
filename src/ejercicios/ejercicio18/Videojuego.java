@@ -1,6 +1,6 @@
 package ejercicios.ejercicio18;
 
-public class Videojuego {
+public class Videojuego implements Entregable {
     private String titulo = "";
     private Integer horasEstimadas = 10;
     private Boolean entregado = false;
@@ -64,5 +64,41 @@ public class Videojuego {
                 ", genero='" + genero + '\'' +
                 ", compañia='" + compañia + '\'' +
                 '}';
+    }
+
+
+    /**
+     * Cambia el atributo entregado a true
+     */
+    @Override
+    public void entregar() {
+        this.entregado = true;
+    }
+
+    /**
+     * Cambia el atributo entregado a false
+     */
+    @Override
+    public void devolver() {
+        this.entregado = false;
+    }
+
+    /**
+     * Devuelve el estado del atributo entregado
+     * @return
+     */
+    @Override
+    public Boolean isEntregado() {
+        return this.entregado;
+    }
+
+    /**
+     * Compara las horas estimadas en los videojuegos y en las series el numero de temporadas.
+     *
+     * @param a
+     */
+    @Override
+    public void compareTo(Object a) {
+
     }
 }

@@ -13,8 +13,9 @@ public interface Entregable {
 
     /**
      * Devuelve el estado del atributo entregado
+     * @return
      */
-    public void isEntregado();
+    public Boolean isEntregado();
 
     /**
      * Compara las horas estimadas en los videojuegos y en las series el numero de temporadas.
