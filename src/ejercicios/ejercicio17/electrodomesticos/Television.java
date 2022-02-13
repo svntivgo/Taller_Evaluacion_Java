@@ -20,4 +20,14 @@ public class Television extends Electrodomestico {
         this.resolucion = resolucion;
         this.sintonizadorTdt = sintonizadorTdt;
     }
+
+    public Double getResolucion() {
+        return resolucion;
+    }
+
+    public Boolean getSintonizadorTdt() {
+        return sintonizadorTdt;
+    }
+
+
 }
