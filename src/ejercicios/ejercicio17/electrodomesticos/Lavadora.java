@@ -3,7 +3,7 @@ package ejercicios.ejercicio17.electrodomesticos;
 import ejercicios.ejercicio17.Electrodomestico;
 
 public class Lavadora extends Electrodomestico {
-    Double carga = 5.0;
+    private Double carga = 5.0;
 
     public Lavadora () {
     }

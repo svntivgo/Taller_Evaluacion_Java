@@ -10,12 +10,7 @@ public class Persona {
 
 
     public Persona () {
-        this.nombre = nombre;
-        this.edad = edad;
         this.dni = generaDNI();
-        this.sexo = sexo;
-        this.peso = peso;
-        this.altura = altura;
     }
 
     public Persona (String nombre, Integer edad, String sexo) {
@@ -23,8 +18,6 @@ public class Persona {
         this.edad = edad;
         this.dni = generaDNI();
         this.sexo = comprobarSexo(sexo);
-        this.peso = peso;
-        this.altura = altura;
     }
 
     public Persona (String nombre, Integer edad, String sexo, Integer peso, Integer altura) {
