@@ -115,9 +115,7 @@ public class main {
          * Este ejercicio contempla el punto 18 del taller
          */
         Comparacion ejercicio18 = new Comparacion();
-        ejercicio18.mostrar();
+//        ejercicio18.mostrar();
 
-//        System.out.println(ejercicio18_1.compareTo(ejercicio18_4.getTitulo(), ejercicio18_4.getNumeroDeTemporadas()));
-//        System.out.println(ejercicio18_2.compareTo(ejercicio18_3.getTitulo(), ejercicio18_3.getHorasEstimadas()));
     }
 }
