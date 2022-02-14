@@ -1,5 +1,7 @@
 package ejercicios.ejercicio18;
 
+import javax.swing.*;
+
 public class Comparacion {
     public void mostrar () {
         Serie arraySeries[] = new Serie[5];
@@ -62,7 +64,6 @@ public class Comparacion {
         Integer serieRecord = 0;
 
         for (int i = 0; i < arraySeries.length; i++) {
-
             if (arraySeries[i].getNumeroDeTemporadas() > recordTemporadas) {
                 recordTemporadas = arraySeries[i].getNumeroDeTemporadas();
                 serieRecord = i;
@@ -73,21 +74,23 @@ public class Comparacion {
         Integer juegoRecord = 0;
 
         for (int i = 0; i < arrayVideoJuegos.length; i++) {
-
             if (arrayVideoJuegos[i].getHorasEstimadas() > recordHoras) {
                 recordHoras = arrayVideoJuegos[i].getHorasEstimadas();
                 juegoRecord = i;
             }
         }
 
-        System.out.println(
-                "La serie con mas temporadas es:"+"\n"+
-                arraySeries[serieRecord].toString())
-        ;
+        JOptionPane.showMessageDialog(null, arraySeries[serieRecord].toString(),"La serie con mas temporadas es",1,null);
+        JOptionPane.showMessageDialog(null,arrayVideoJuegos[juegoRecord].toString(),"El juego con mas horas es",1,null);
 
-        System.out.println(
-                "El juego con mas horas es:"+"\n"+
-                arrayVideoJuegos[juegoRecord].toString())
-        ;
+//        System.out.println(
+//                "La serie con mas temporadas es:"+"\n"+
+//                arraySeries[serieRecord].toString())
+//        ;
+//
+//        System.out.println(
+//                "El juego con mas horas es:"+"\n"+
+//                arrayVideoJuegos[juegoRecord].toString())
+//        ;
     }
 }

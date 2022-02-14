@@ -16,11 +16,4 @@ public interface Entregable {
      * @return estado de la entrega
      */
     public Boolean isEntregado();
-
-    /**
-     * Compara las horas estimadas en los videojuegos y en las series el numero de temporadas
-     * @param otroObjetoTitulo Titulo del objeto a comparar
-     * @param otroObjetoDuracion Duracion del objeto a comparar
-     */
-    public String compareTo (String otroObjetoTitulo, Integer otroObjetoDuracion);
 }

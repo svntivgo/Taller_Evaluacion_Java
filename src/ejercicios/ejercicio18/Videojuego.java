@@ -1,6 +1,6 @@
 package ejercicios.ejercicio18;
 
-public class Videojuego implements Entregable {
+public class Videojuego implements Entregable, Comparable {
     private String titulo = "";
     private Integer horasEstimadas = 10;
     private Boolean entregado = false;
@@ -57,13 +57,10 @@ public class Videojuego implements Entregable {
 
     @Override
     public String toString() {
-        return "Videojuego{" +
-                "titulo='" + titulo + '\'' +
-                ", horasEstimadas=" + horasEstimadas +
-                ", entregado=" + entregado +
-                ", genero='" + genero + '\'' +
-                ", compañia='" + compañia + '\'' +
-                '}';
+        return  "El videojuego tiene como título " + titulo +
+                ", sus horas estimadas de juego son " + horasEstimadas +
+                ", pertenece al genero " + genero +
+                ", y lo desarolló la compañia " + compañia ;
     }
 
 
@@ -92,19 +89,8 @@ public class Videojuego implements Entregable {
         return this.entregado;
     }
 
-    /**
-     * Compara las horas estimadas en los videojuegos y en las series el numero de temporadas
-     * @param otroObjetoTitulo Titulo del objeto a comparar
-     * @param otroObjetoDuracion Duracion del objeto a comparar
-     * @return Mensaje de la comparación
-     */
     @Override
-    public String compareTo(String otroObjetoTitulo, Integer otroObjetoDuracion) {
-        String mensaje =
-                "El videojuego "+this.titulo+" tiene "+this.horasEstimadas+" horas estimadas de juego"+"\n"+
-                "El videojuego "+otroObjetoTitulo+" tiene "+otroObjetoDuracion+" horas estimadas de juego"+"\n"+
-                "El videojuego "+this.titulo+" tiene una diferencia de "+(this.horasEstimadas-otroObjetoDuracion)+" horas respecto al videojuego "+otroObjetoTitulo
-                ;
-        return mensaje;
+    public int compareTo(Object o) {
+        return 0;
     }
 }
